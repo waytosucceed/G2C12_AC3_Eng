@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Activity 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+  <style>
+     body {
+            margin: 0;
+         
+        }
+
+        /* Style for the header */
+        .header {
+            position: fixed; /* Fixes the header at the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0);
+            padding-bottom: 10px;
+            background-color: white; /* Ensure the header background is solid */
+            z-index: 1000; /* Ensures the header stays above other content */
+        }
+    .activity {
+      width: 100%;
+      height: auto;
+      background-color: rgb(156, 225, 247);
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+    }
+
+    .activity p {
+      font-size: 18px;
+    }
+
+    #img-area {
+      width: 40%;
+    }
+
+    #content-area {
+      width: 60%;
+    }
+
+    #heading {
+      font-family: Harrington;
+      font-size: 40px;
+      font-weight: bolder;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      padding: 12px;
+      font-size: 29px;
+    }
+
+    .sound-button {
+      cursor: pointer;
+      font-size: 24px;
+      border: none;
+      background: none;
+      /* color: blue; */
+      /* text-decoration: underline; */
+      margin-left: 5px;
+    }
+
+    .sound-button:hover {
+      text-decoration: none;
+    }
+    .backgroun{
+            background-image: url("border.png");
+            background-size: cover; /* Ensures the background image covers the section */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat;
+
+        }
+    .clickable-w {
+      cursor: pointer;
+      color: rgb(154, 34, 240); /* Optionally style the clickable "W" */
+    }
+    .clickable-wh {
+      cursor: pointer;
+      color: rgb(154, 34, 240); /* Optionally style the clickable "W" */
+    }
+  </style>
+</head>
+
+<body class="backgroun">
+  <audio id="sound-player11" src="./sounds/Fish.mp3"></audio>
+  <audio id="sound-player12" src="./sounds/fun.mp3"></audio>
+  <audio id="sound-player13" src="./sounds/Frog.mp3"></audio>
+  <audio id="sound-player21" src="./sounds/Puff.mp3"></audio>
+  <audio id="sound-player22" src="./sounds/Stuff.mp3"></audio>
+  <audio id="sound-player23" src="./sounds/fluff.mp3"></audio>
+  <audio id="sound-player31" src="./sounds/Phone.mp3"></audio>
+  <audio id="sound-player32" src="./sounds/Elephant.mp3"></audio>
+  <audio id="sound-player33" src="./sounds/Photo.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+  </div>
+  <br>
+  <br>
+  <center>
+    <h1 id="heading" style="padding-top: 5%;">Words with f, ff, ph</h1> <br>
+  </center>
+  <div class="container-fluid text-center" style="font-size: 22px; padding-left: 15%;">
+   
+    <p class="text-start">
+      <span style="color: rgb(154, 34, 240); font-weight: 600;"><u>Convention/Grammar</u></span><br><br>
+      The letter "f":
+      <ul class="text-start">
+        <li>Makes a sound like blowing out a candle.</li>
+        <li>Examples:<span class="clickable-11 btn btn-primary" style="font-size: 20px; color:white">fish</span>,<span class="clickable-12 btn btn-primary" style="font-size: 20px; color:white">fun</span>,<span class="clickable-13 btn btn-primary" style="font-size: 20px; color:white">frog</span></li>
+      </ul>
+      <p class="text-start">The double "ff":</p>
+       
+       <ul class="text-start">
+         <li>Makes the same sound as "f", but it's double the fun!</li>
+         <li>Often comes at the end of words after a short vowel sound.</li>
+         <li>Examples:<span class="clickable-21 btn btn-primary" style="font-size: 20px; color:white">puff</span>,<span class="clickable-22 btn btn-primary" style="font-size: 20px; color:white">stuff</span>,<span class="clickable-23 btn btn-primary" style="font-size: 20px; color:white">fluff</span></li>
+       </ul>
+       <p class="text-start">The tricky "ph":</p>
+       
+       <ul class="text-start">
+         <li>Looks different but sounds just like "f".</li>
+         <li>It's like "p" and "h" are playing dress-up as "f".</li>
+         <li>Examples:<span class="clickable-31 btn btn-primary" style="font-size: 20px; color:white">phone</span>,<span class="clickable-32 btn btn-primary" style="font-size: 20px; color:white">elephant</span>,<span class="clickable-33 btn btn-primary" style="font-size: 20px; color:white">photo</span></li>
+       </ul>
+       <p class="text-start">Remember our special rules:</p>
+       
+       <ul class="text-start">
+        <li>Words often end with "ff" after a short vowel sound.</li>
+        <li>"Ph" always makes the "f" sound, no matter where it is in a word.</li>
+       </ul>
+       <p class="text-start">More examples:</p>
+       <ul class="text-start">
+        <li>Frog (f)</li>
+        <li>Stuff (ff)</li>
+        <li>Dolphin (ph)</li>
+        <li>Fluffy (f and ff)</li>
+        <li>Elephant (ph)</li>
+       </ul>
+ </p>
+   
+    <br>
+    <a href="fun_time.html" class="btn btn-primary mb-5 btn-lg- text-center"
+      style="height: 50px; width: 200px; font-size: 22px;">Word Meanings</a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player12');
+      var clickableW = document.querySelector('.clickable-12');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player13');
+      var clickableW = document.querySelector('.clickable-13');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player11');
+      var clickableW = document.querySelector('.clickable-11');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player21');
+      var clickableW = document.querySelector('.clickable-21');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player22');
+      var clickableW = document.querySelector('.clickable-22');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player23');
+      var clickableW = document.querySelector('.clickable-23');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player31');
+      var clickableW = document.querySelector('.clickable-31');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      var soundPlayer = document.getElementById('sound-player32');
+      var clickableW = document.querySelector('.clickable-32');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+
+      
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the sound player and the clickable "W" letter
+      
+
+      var soundPlayer = document.getElementById('sound-player33');
+      var clickableW = document.querySelector('.clickable-33');
+      
+      // Add a click event listener to the clickable "W" letter
+      if (clickableW) {
+        clickableW.addEventListener('click', function () {
+          soundPlayer.play();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
